@@ -1,0 +1,14 @@
+<div class="wrap">
+    <header ng-if="headerShow">
+        <div class="leftBth"></div>
+        <h2>{{hTitle}}<img src="img/header/header.gif" alt="" ng-if="indexImg"/></h2>
+        <div class="rightBtn" ng-class="rightBtn()" ng-click="change()" ng-if="rightBtnShow"></div>
+    </header>
+    <div class="main"><ui-view class="view"></ui-view></div>
+    <footer>
+        <a href="" ui-sref="home.index" ui-sref-active="on"><span></span><b>首页</b></a>
+        <a href="" ui-sref="home.licai" ui-sref-active="on"><span></span><b>理财产品</b></a>
+        <a href="" ui-sref="home.user" ui-sref-active="on"><span></span><b>我的账户</b></a>
+        <a href="" ui-sref="home.more" ui-sref-active="on"><span></span><b>更多</b></a>
+    </footer>
+</div>

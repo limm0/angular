@@ -1,0 +1,24 @@
+<div class="jijin">
+    <div class="indexList">
+        <ul>
+            <li ng-repeat="item in data | setData:name">
+                <div><span>{{item.name}}</span><h4>(000663)混合型</h4></div>
+                <div>
+                    <span>
+                        <b class="per">12</b>
+                        <i>季涨幅</i>
+                        <em>.0%</em>
+                    </span>
+                    <span>
+                        <b>单位净值</b>
+                        <strong>2.0320</strong>
+                    </span>
+                    <span>
+                        <a class="rate"><b>抢购</b><my-canvas amount="item.amount" usable="item.usable_amount"></my-canvas></a>
+                        <em>已有<mark>163</mark>人购买</em>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

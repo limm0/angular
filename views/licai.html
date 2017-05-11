@@ -1,0 +1,16 @@
+<div class="licai">
+    <div class="content">
+        <nav>
+            <a href="" ui-sref="home.licai.zhaiquan" ui-sref-active="on"><span>债券产品</span></a><a href="" ui-sref="home.licai.jijin" ui-sref-active="on"><span>优选基金</span></a>
+        </nav>
+        <ui-view></ui-view>
+        <div class="mask" ng-class="{true:'show',false:'hide'}[flag]">
+            <div class="filterList">
+                <ul>
+                    <li ng-repeat="item in list" ng-click="checked(item)"><span ng-class="choose(item)"></span><p>{{item}}</p></li>
+                </ul>
+            </div>
+            <div class="blackBox" ng-click="change()"></div>
+        </div>
+    </div>
+</div>
